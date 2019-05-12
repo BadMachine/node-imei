@@ -26,3 +26,6 @@ Returns a string with valid imei. Script makes string with 3 parts:
 ### isValid(imei)
 Returns a boolean value.
 
+## License
+
+  [MIT](LICENSE)
