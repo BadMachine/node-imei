@@ -38,7 +38,7 @@ function Luhn(line) {
 return Luhndigit;
 }
 
-function GetRandom(device){
+function GetRandom(){
     var randImei;
     var objLength = Object.keys(codes).length;
     var keys = Object.keys(codes)
