@@ -9,7 +9,7 @@ imei generator/checker (via Luhn algorithm)
 ``` javascript
 var imei = require('node-imei');
 
-var IMEI= new imei;
+var IMEI= new imei();
 console.log(IMEI.random()); // returns string with random imei
 
 console.log(IMEI.device("Apple","iPhone3G")); // returns string with imei by device TAC
