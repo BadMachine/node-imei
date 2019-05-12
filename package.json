@@ -1,0 +1,25 @@
+{
+  "name": "node-imei",
+  "version": "1.0.2",
+  "description": "imei generator/checker",
+  "main": "./scr/imei.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadMachine/node-imei.git"
+  },
+  "keywords": [
+    "imei",
+    "imeigen",
+    "imeicheck"
+  ],
+  "author": "ME",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BadMachine/node-imei/issues"
+  },
+  "homepage": "https://github.com/BadMachine/node-imei#readme"
+}
