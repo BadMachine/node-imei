@@ -1,6 +1,6 @@
 var codes = require('../TAC/codes')
 function SN() {
-    return Math.floor(Math.random() * (999999 - 100000)) + 100000;
+    return (Math.floor(Math.random() * (999999 - 100000)) + 100000).toString();
 }
 
 function upTo(digit){
@@ -16,12 +16,13 @@ function Luhn(line) {
     for(var i = 1; i< line.length;i=i+2){
         even.push(Number(line[i])*2);
         summOdd = summOdd + Number(line[i-1]);
-        if(i==13) {
+         if(i==13) {
             break;
         }
     }
     for(var y = 0;y<even.length;y++){
-        if(Number(even[y])/10<1) {
+
+         if(Number(even[y])/10<1) {
             summEven = summEven + Number(even[y]);
         }else
         {
@@ -31,7 +32,7 @@ function Luhn(line) {
         }
 
 
-        
+
     }
     var Luhndigit = summEven+summOdd;
     Luhndigit = upTo(Luhndigit) - Luhndigit;
@@ -46,14 +47,15 @@ function GetRandom(){
     var SNs = Object.keys(randDevice);
     var randCode = randDevice[SNs[ SNs.length * Math.random() << 0]];
     if(typeof randCode!= "object") {
-        randImei = randCode + SN();
-        randImei = randImei.toString() + Luhn(randImei).toString();
+         randImei = randCode + SN();
+         randImei = randImei + Luhn(randImei).toString();
         return randImei;
     }else
     {
         var deeper = Object.keys(randCode);
-        randCode = randCode[deeper[ deeper.length * Math.random() << 0]];
-        randImei = randImei.toString() + Luhn(randImei).toString();
+        randCode = randCode[deeper[deeper.length * Math.random() << 0]];
+        randImei = randCode + SN();
+        randImei = randImei + Luhn(randImei).toString();
         return randImei;
     }
 
