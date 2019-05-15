@@ -25,7 +25,15 @@ Returns a string with valid imei. Script makes string with 3 parts:
 
 ### isValid(imei)
 Returns a boolean value.
+# Also
+codes.js contains json object with Type Allocation Codes.
+## If you want to extend the file
+Just add new TAC`s in codes.js
+More info and examples of TAC`s you can find at 
+[wiki](https://en.wikipedia.org/wiki/Type_Allocation_Code)
+or
+[OSMOCOM direct link to download TACs db in json](http://tacdb.osmocom.org/export/tacdb.json)
 
-## License
+# License
 
   [MIT](LICENSE)
