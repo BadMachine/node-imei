@@ -1,6 +1,6 @@
 {
-  "name": "node-imei",
-  "version": "1.0.2",
+  "name": "node-imei-ts",
+  "version": "1.0.4",
   "description": "imei generator/checker",
   "main": "./scr/imei.js",
   "devDependencies": {},
