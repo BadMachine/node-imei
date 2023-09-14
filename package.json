@@ -1,7 +1,7 @@
 {
   "name": "node-imei-ts",
   "version": "1.0.4",
-  "description": "imei generator/checker",
+  "description": "imei generator/checker fork from https://github.com/BadMachine/node-imei with added TS compatibility ",
   "main": "./scr/imei.js",
   "devDependencies": {},
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BadMachine/node-imei.git"
+    "url": "git+https://github.com/ToolSense/node-imei.git"
   },
   "keywords": [
     "imei",
@@ -19,7 +19,7 @@
   "author": "ME",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BadMachine/node-imei/issues"
+    "url": "https://github.com/ToolSense/node-imei/issues"
   },
-  "homepage": "https://github.com/BadMachine/node-imei#readme"
+  "homepage": "https://github.com/ToolSense/node-imei#readme"
 }
