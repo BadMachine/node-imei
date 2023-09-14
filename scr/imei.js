@@ -92,13 +92,8 @@ if (LuhnDigit == LastDigit) return true;
 else return false;
 }
 
-
-
-
-var imei = function () {
-    this.random = GetRandom;
-    this.device = ByDevice;
-    this.isValid = checkDigit;
-}
-
-module.exports = imei;
+module.exports = {
+    random: GetRandom,
+    device: ByDevice,
+    isValid: checkDigit
+};
