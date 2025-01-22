@@ -14,7 +14,10 @@ function getRandSerial() {
    9 < value < 19
 */
 const getSplitSum = (value: number) => {
-    return String(value).split("").reduce((acc, item) => acc+= +item, 0);
+    return String(value).split("").reduce((acc, item) => {
+        acc+= +item;
+        return acc;
+    }, 0);
 }
 
 const getLuhnSum = (value: string): number => {
