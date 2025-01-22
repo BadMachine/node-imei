@@ -1,6 +1,6 @@
 {
   "name": "node-imei",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "imei generator/checker",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/BadMachine/node-imei.git"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "imei",
     "imeigen",
