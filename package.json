@@ -2,21 +2,34 @@
   "name": "node-imei",
   "version": "1.0.2",
   "description": "imei generator/checker",
-  "main": "./scr/imei.js",
-  "devDependencies": {},
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "type": "module",
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BadMachine/node-imei.git"
   },
+  "files": ["dist"],
   "keywords": [
     "imei",
     "imeigen",
-    "imeicheck"
+    "imeicheck",
+    "typescript",
+    "luhn",
+    "library"
   ],
-  "author": "ME",
+  "author": "BadMachine",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BadMachine/node-imei/issues"
