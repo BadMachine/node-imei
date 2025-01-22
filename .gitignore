@@ -2,3 +2,4 @@
 .vscode
 *.tgz
 node_modules
+dist

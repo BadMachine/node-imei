@@ -66,6 +66,10 @@ const isValid = (value: string) => {
     }
 }
 
+/*
+    @Param {string} [serial = getRandSerial()] - Specified / Random serial number
+*/
+
 const getRandom = (serial: string = getRandSerial()): string => {
     const brands = Object.keys(codes);
 

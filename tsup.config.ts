@@ -5,5 +5,7 @@ export default defineConfig({
 	clean: true,
 	minify: true,
 	format: ["cjs", "esm"],
+	target: 'esnext',
+	platform: 'neutral',
 	dts: true,
 });

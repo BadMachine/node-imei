@@ -23,6 +23,10 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
   "keywords": [
     "imei",
     "imeigen",

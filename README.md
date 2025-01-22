@@ -6,15 +6,24 @@ imei generator/checker (via Luhn algorithm)
     $ npm install node-imei
     
 ## Usage
+### Node environment
+
 ``` javascript
-var imei = require('node-imei');
+const { getRandom, getImeiByDevice, isValid } = require('node-imei');
+```
 
-var IMEI= new imei();
-console.log(IMEI.random()); // returns string with random imei
+### ESM
+```typescript
+import { getRandom, getImeiByDevice, isValid } from 'node-imei';
+```
 
-console.log(IMEI.device("Apple","iPhone3G")); // returns string with imei by device TAC
+# Functions
+```typescript
+getRandom(); // returns string with random imei
 
-console.log(IMEI.isValid("860921035123120")); // returns true
+getImeiByDevice("Apple","iPhone3G"); // returns string with imei by device TAC
+
+isValid("860921035123120"); // returns true
 ```
 
 ### random()
